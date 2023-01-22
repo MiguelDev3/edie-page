@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Edie Homepage</title>
+        <meta name="google" content="notranslate">
+        <link
+            rel="shortcut icon"
+            href="./assets/devchallenges.png"
+            type="image/png"
+        />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome 6 -->
+        <script src="https://kit.fontawesome.com/98e7fc655d.js" crossorigin="anonymous"></script>
+        <!-- CSS Styles -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- JS Files -->
+        <script src="./js/main.js" defer></script>
+    </head>
+    <body>
+        <header class="main-header">
+            <h1>Edie</h1>
+            <button class="btn-hamburger" aria-controls="primary-navigation" aria-expanded="false">
+                <svg fill="var(--color-secondary)" class="hamburger-menu" viewBox="0 0 100 100" width="48">
+                    <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
+                    <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+                    <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+                </svg>
+            </button>
+            <nav class="main-navbar">
+                <ul>
+                    <li data-href="home">Home</li>
+                    <li data-href="services">Services</li>
+                    <li data-href="our-works">Our Works</li>
+                    <li data-href="clients">Clients</li>
+                    <li data-href="contact-footer">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article class="section-hero" id="home">
+                <section class="hero-titles">
+                    <h5>Unhappy with your website</h5>
+                    <h2>We create beautiful and fast web services</h2>
+                </section>
+                <picture>
+                    <img src="./assets/heroImage.jpg" alt="People on meeting front of the board">
+                </picture>
+            </article>
+            <article class="hero-description">
+                <h2>Story, emotion and purpose</h2>
+                <p>We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+                <section class="contact-form">
+                    <label for="contact-email" class="text-muted">Want us to contact you?</label>
+                    <div class="email-group">
+                        <input type="email" class="text-muted" name="email" id="contact-email" placeholder="Email">
+                        <button type="button">Join</button>
+                    </div>                    
+                    
+                </section>
+            </article>
+            <article class="main-services" id="services">
+                <h2>We offer high demand services</h2>
+                <div class="layout-services">
+                    <section class="service">
+                        <span style="--bg: #2D9CDB"><i class="fa-solid fa-pen"></i></span>
+                        <h3>UI/UX Design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                        <button class="service-btn">Get started</button>
+                    </section>
+                    <section style="--bg: #27AE60" class="service active">
+                        <span><i class="fa-solid fa-code"></i></span>
+                        <h3>Front End</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                        <button class="service-btn">Get started</button>
+                    </section>
+                    <section style="--bg: #EB5757" class="service">
+                        <span><i class="fa-solid fa-server"></i></span>
+                        <h3>Back End</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+                        <button class="service-btn">Get started</button>
+                    </section>
+                </div>
+            </article>
+            <article class="main-designs" id="our-works">
+                <h2>Good design means good business</h2>
+                <div class="layout-designs">
+                    <section class="design-figure">
+                        <figure>
+                            <img src="./assets/smarthome.jpg">
+                            <figcaption>Full stack application</figcaption>
+                        </figure>
+                        <h3>Smart home dashboard</h3>
+                    </section>
+                    <section class="design-figure">
+                        <figure>
+                            <img src="./assets/onboard.png">
+                            <figcaption>UX/UI design</figcaption>
+                        </figure>
+                        <h3>Onboard application</h3>
+                    </section>
+                    <section class="design-figure">
+                        <figure>
+                            <img src="./assets/booking.png">
+                            <figcaption>Mobile application</figcaption>
+                        </figure>
+                        <h3>Booking system</h3>
+                    </section>
+                    <section class="design-figure">
+                        <figure>
+                            <img src="./assets/juice-product.png">
+                            <figcaption>Front End application</figcaption>
+                        </figure>
+                        <h3>Juice product homepage</h3>
+                    </section>
+                </div>
+                <a href="#">See more <i class="fa-solid fa-arrow-right"></i></a>
+            </article>
+            <article class="our-team">
+                <div class="team-content">
+                    <div class="team-info">
+                        <h4>Meet the team</h4>
+                        <h2>We are chilled and a laidback team</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                    <div class="team-img">
+                        <figure>
+                            <img src="./assets/person1.png" alt="Smiling person 1">
+                        </figure>
+                        <figure>
+                            <img src="./assets/person2.png" alt="Smiling person 2">
+                        </figure>
+                        <figure>
+                            <img src="./assets/person3.png" alt="Smiling person 3">
+                        </figure>
+                    </div>
+                </div>
+                <section class="testimonials" id="clients">
+                    <p>“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</p>
+                    <div class="user-card">
+                        <figure>
+                            <img src="./assets/person4.png" alt="Profile Photo">
+                        </figure>
+                        <h3>Carlos Tran</h3>
+                        <span>The Decorate Gatsby</span>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <section class="nav-footer">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#our-works">Our Works</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact-footer">Contact</a></li>
+                    </ul>
+                </section>
+                <section class="social">
+                    <h2>Edie</h2>
+                    <div class="social-links">
+                        <i class="fa-brands fa-square-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-square-twitter"></i>
+                    </div>
+                </section>
+                <section class="newsletter" id="contact-footer">
+                    <section class="contact-form">
+                        <label for="contact-email">Want us to contact you?</label>
+                        <div class="email-group">
+                            <input type="email" name="email" id="contact-email-footer" placeholder="Email">
+                            <button type="button" class="btn-news" id="btn-join">Join</button>
+                        </div>                    
+                        
+                    </section>
+                </section>
+            </div>
+        </footer>
+        <section class="credits">
+            <p>created by <b>MaikDev3</b> - devchallenges.io</p>
+        </section>
+    </body>
+</html>

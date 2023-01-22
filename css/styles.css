@@ -1,0 +1,474 @@
+/*>>>>>>>>>>>>>>> ROOT <<<<<<<<<<<<<<<*/
+:root{
+    --font-title: 'Heebo', sans-serif;
+    --font-primary: 'Poppins', sans-serif;
+    --font-footer: 'Montserrat', sans-serif;
+    --color-gray: #828282;
+    --color-ligth-gray: #E0E0E0;
+    --color-functional: #2D9CDB;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --height-footer: 60px;
+    --header-height: 64px;  
+    --margin-designs: 80px;  
+}
+/*>>>>>>>>>>>>>>> RESET <<<<<<<<<<<<<<<*/
+html {
+    scroll-behavior: smooth;
+}
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+ol, ul {
+    list-style: none;
+}
+/*>>>>>>>>>>>>>>> SITE STYLES <<<<<<<<<<<<<<<*/
+body{
+    position: relative;
+    --color-primary: #ffffff;
+    --color-secondary: #100E1D;
+    font-family: var(--font-primary);
+}
+.btn-hamburger[aria-expanded="true"] ~ .main-navbar li{
+    transform: translateX(-105px);
+}
+.contact-form label{
+    font-size: 12px;
+}
+.design-figure{
+    margin: 1rem auto;
+}
+.design-figure figcaption{
+    color: var(--color-gray);
+    font-size: 12px;
+}
+.design-figure h3{
+    font-weight: 600;
+}
+.design-figure img{
+    border-radius: 16px;
+}
+.email-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.email-group > input{
+    background-color: var(--color-ligth-gray);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+}
+.email-group > button{
+    font-size: 14px;
+    color: var(--color-primary);
+    background-color: var(--color-functional);
+    border: none;
+    border-radius: 10px;
+    padding: 1px 1.5rem;
+    position: absolute;
+    height: 32px;
+    right: 6px;
+}
+footer{
+    background-color: var(--color-secondary);
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 2rem 2rem 10rem;
+    gap: 3rem;
+}
+footer .nav-footer li{
+    margin: 10px 0;
+}
+footer .nav-footer li > a{
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color-primary);
+}
+footer .social > h2,
+footer .social i{
+    font-size: 30px;
+    color: var(--color-primary);
+}
+footer .social .social-links{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100px;
+}
+footer .newsletter label{
+    color: var(--color-primary)
+}
+
+h2{
+    font-weight: 500;
+}
+.hero-description{
+    margin: 0 auto;
+    width: 90%;
+}
+.hero-description p{
+    margin: 1.2rem 0;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.hero-titles{
+    margin: 1rem auto;
+    width: 90%;
+}
+.hero-titles > h5{
+    color: var(--color-functional);
+    font-weight: 500;
+}
+#home, #services, #our-works, #clients{
+    padding-top: var(--header-height);
+}
+img{
+    width: 100%;
+}
+input{
+    font-family: inherit;    
+}
+input::placeholder{
+    color: var(--color-gray);
+    opacity: .5;
+}
+.layout-designs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.layout-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+main{
+    margin: 2rem 0 var(--height-footer);
+    padding: 0 1rem;
+    z-index: 1;
+}
+.main-designs{
+    margin: auto;
+    width: 90%;
+}
+.main-designs > a{
+    font-family: inherit;
+    display: inline-block;
+    margin: 1rem 0 3rem;
+    color: var(--color-functional);
+    text-decoration: none;
+}
+.main-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: var(--color-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+    z-index: 20;
+}
+.main-navbar{
+    position: fixed;
+    top: var(--header-height);
+    left: 100%;
+}
+.main-navbar li{
+    padding: 1rem;
+    text-align: center;
+    color: var(--color-primary);
+    border: 3px solid var(--color-secondary);
+    background-color: var(--color-secondary);    
+    transform: translateX(0);
+    cursor: pointer;
+}
+.main-navbar li:nth-child(1){
+    transition: transform 500ms ease-in-out;
+}
+.main-navbar li:nth-child(2){
+    transition: transform 500ms ease-in-out 100ms;
+}
+.main-navbar li:nth-child(3){
+    transition: transform 500ms ease-in-out 200ms
+}
+.main-navbar li:nth-child(4){
+    transition: transform 500ms ease-in-out 300ms;
+}
+.main-navbar li:nth-child(5){
+    transition: transform 500ms ease-in-out 400ms;
+}
+.main-services{
+    margin: 4rem auto;
+    width: 90%;
+}
+.our-team{
+    margin-bottom: 4rem;
+}
+.our-team h4{
+    color: #EB5757;
+    font-weight: 600;
+}
+.our-team h2,
+.our-team .team-info > p{
+    margin: 1rem auto;
+}
+.section-hero img{
+    border-radius: 1rem;
+}
+.service{
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    border-radius: 15px;
+    transition: box-shadow 250ms ease-in;
+}
+.service:hover{
+    box-shadow: 0px 10px 30px var(--color-ligth-gray);
+}
+
+.service > *{
+    margin: 1.25rem auto;
+}
+.service > span {
+    display: inline-block;
+    background-color: var(--bg);
+    padding: 1rem;
+    border-radius: 12px;
+}
+.service > span > i{
+    color: #fff;
+}
+.service-btn{
+    cursor: pointer;
+    border: 1px solid var(--color-ligth-gray);
+    background-color: var(--color-ligth-gray);
+    color: var(--color-gray);
+    font-family: inherit;
+    padding: 12px 1rem;
+    font-size: 16px;
+    border-radius: 16px;
+    transition: all 500ms ease-in;
+}
+.service:hover .service-btn{
+    background-color: var(--color-functional);
+    color: var(--color-white);
+}
+.team-img {
+    display: grid;
+    grid-template-areas: 
+        'main second'
+        'main third';
+    gap: 12px;
+    align-items: center;
+    margin: 2rem auto;
+}
+.team-img > figure > img {
+    border-radius: 15px;
+}
+
+.team-img > figure:first-child{
+    grid-area: second;
+    width: 90%;
+}
+.team-img > figure:nth-child(2){
+    grid-area: third;
+}
+.team-img > figure:nth-child(3){
+    grid-area: main;
+}
+.testimonials > p{
+    margin: 3rem auto;
+    font-size: 20px;
+    font-weight: 500;
+}
+.user-card{
+    max-width: 360px;
+    display: grid;
+    grid-template-areas: 
+        'img name'
+        'img title';
+    justify-content: space-around;
+    align-items: center;
+}
+.user-card img{
+    border-radius: 15px;
+}
+.user-card > figure{
+    max-width: 80px;
+    grid-area: img;
+}
+.user-card > h3{
+    font-size: 22px;
+    grid-area: name;
+}
+.user-card > span{
+    color: var(--color-gray);
+    font-size: 18px;
+    grid-area: title;
+}
+/*>>>>>>>>>>>>>>> RESPONSIVE SITE STYLES <<<<<<<<<<<<<<<*/
+@media screen and (min-width: 768px) {
+    .hero-description{
+        margin: 0;
+        width: 50%;
+    }
+    .layout-designs{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .layout-designs .design-figure:nth-child(even){
+        margin-bottom: var(--margin-designs);
+    }
+    .layout-designs .design-figure:nth-child(odd){
+        margin-top: var(--margin-designs);
+    }
+    main{
+        margin: auto;
+        max-width: 700px;
+    }
+    .main-designs > a{
+        display: block;
+        text-align: end;
+    }
+}
+@media screen and (min-width: 991px) {
+    :root{
+        --margin-designs: 200px;
+    }
+    .btn-hamburger{
+        display: none;
+    }
+    footer > .footer-content{
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+        max-width: 1180px;
+    }
+    .hero-description{
+        margin-left: 4rem;
+    }
+    .layout-designs{        
+        gap: 16px;
+    }
+    main{
+        max-width: 1180px;
+    }
+    .main-navbar{
+        position: unset;
+        width: 50%;
+    }
+    .main-navbar > ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .main-navbar li{
+        padding: 1rem;
+        text-align: center;
+        color: var(--color-secondary);
+        border: 3px solid var(--color-primary);
+        background-color: var(--color-primary);    
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .main-navbar li:nth-child(1),
+    .main-navbar li:nth-child(2),
+    .main-navbar li:nth-child(3),
+    .main-navbar li:nth-child(4),
+    .main-navbar li:nth-child(5){
+        transition: all 500ms ease-in-out;
+    }
+    
+    .main-navbar li:hover{
+        color: var(--color-primary);
+        border: 3px solid var(--color-secondary);
+        background-color: var(--color-secondary);    
+    }
+    .team-content{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 25% 1fr;
+    }
+    .testimonials{
+        max-width: 70%;
+    }
+    .testimonials > p{
+        font-size: 2vh;
+    }
+}
+/*>>>>>>>>>>>>>>> COMPONENTS <<<<<<<<<<<<<<<*/
+/* ANIMATED HAMBURGER MENU */
+.btn-hamburger{
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    top: 0;
+    right: 0;
+}
+.btn-hamburger, .btn-hamburger *{
+    z-index: 101;
+}
+.btn-hamburger .line{
+    transition: 
+        y 300ms ease-in 300ms,
+        rotate 300ms ease-in,
+        opacity 0ms 300ms;
+    transform-origin: center;
+}
+.btn-hamburger[aria-expanded="true"] .line{
+    transition: 
+        y 300ms ease-in,
+        rotate 300ms ease-in 300ms,
+        opacity 0ms 300ms;
+}
+
+.btn-hamburger[aria-expanded="true"] :is(.top, .bottom){
+    y: 45;
+}
+
+.btn-hamburger[aria-expanded="true"] .top{
+    rotate: 45deg;
+}
+
+.btn-hamburger[aria-expanded="true"] .middle{
+    opacity: 0;
+}
+
+.btn-hamburger[aria-expanded="true"] .bottom{
+    rotate: -45deg;
+}
+.credits{
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    padding: 24px 0;
+    z-index: 10;
+    width: 100%;
+    background: var(--color-secondary);
+}
+.credits > p{
+    color: var(--color-primary);
+    text-align: center;
+    width: 100%;
+    font-family: var(--font-footer);
+    font-size: 14px;
+}
+/*>>>>>>>>>>>>>>> RESPONSIVE COMPONENTS <<<<<<<<<<<<<<<*/
+/*>>>>>>>>>>>>>>> UTILITIES <<<<<<<<<<<<<<<*/
+.text-muted{
+    color: var(--color-gray);
+}
